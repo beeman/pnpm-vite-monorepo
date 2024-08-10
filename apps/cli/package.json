@@ -22,9 +22,9 @@
     "build": "tsc && vite build"
   },
   "devDependencies": {
-    "vite-plugin-static-copy": "^1.0.6",
-    "typescript": "^5.5.3",
-    "vite": "^5.4.0"
+    "vite-plugin-static-copy": "catalog:",
+    "typescript": "catalog:",
+    "vite": "catalog:"
   },
   "dependencies": {
     "@mono/tools": "workspace:*"

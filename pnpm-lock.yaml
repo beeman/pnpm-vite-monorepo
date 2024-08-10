@@ -4,6 +4,69 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+catalogs:
+  default:
+    '@eslint/js':
+      specifier: ^9.8.0
+      version: 9.9.0
+    '@testing-library/jest-dom':
+      specifier: ^6.4.8
+      version: 6.4.8
+    '@testing-library/react':
+      specifier: ^16.0.0
+      version: 16.0.0
+    '@types/node':
+      specifier: ^22.2.0
+      version: 22.2.0
+    '@types/react':
+      specifier: ^18.3.3
+      version: 18.3.3
+    '@types/react-dom':
+      specifier: ^18.3.0
+      version: 18.3.0
+    '@vitejs/plugin-react-swc':
+      specifier: ^3.5.0
+      version: 3.7.0
+    eslint:
+      specifier: ^9.8.0
+      version: 9.9.0
+    eslint-plugin-react-hooks:
+      specifier: ^5.1.0-rc.0
+      version: 5.1.0-rc-fb9a90fa48-20240614
+    eslint-plugin-react-refresh:
+      specifier: ^0.4.9
+      version: 0.4.9
+    globals:
+      specifier: ^15.9.0
+      version: 15.9.0
+    jsdom:
+      specifier: ^24.1.1
+      version: 24.1.1
+    memfs:
+      specifier: ^4.11.1
+      version: 4.11.1
+    react:
+      specifier: ^18.3.1
+      version: 18.3.1
+    react-dom:
+      specifier: ^18.3.1
+      version: 18.3.1
+    typescript:
+      specifier: ^5.5.3
+      version: 5.5.4
+    typescript-eslint:
+      specifier: ^8.0.0
+      version: 8.0.1
+    vite:
+      specifier: ^5.4.0
+      version: 5.4.0
+    vite-plugin-static-copy:
+      specifier: ^1.0.6
+      version: 1.0.6
+    vitest:
+      specifier: ^2.0.5
+      version: 2.0.5
+
 importers:
 
   .: {}
@@ -15,13 +78,13 @@ importers:
         version: link:../../packages/tools
     devDependencies:
       typescript:
-        specifier: ^5.5.3
+        specifier: 'catalog:'
         version: 5.5.4
       vite:
-        specifier: ^5.4.0
+        specifier: 'catalog:'
         version: 5.4.0(@types/node@22.2.0)
       vite-plugin-static-copy:
-        specifier: ^1.0.6
+        specifier: 'catalog:'
         version: 1.0.6(vite@5.4.0(@types/node@22.2.0))
 
   apps/web:
@@ -33,124 +96,124 @@ importers:
         specifier: workspace:*
         version: link:../../packages/utils
       react:
-        specifier: ^18.3.1
+        specifier: 'catalog:'
         version: 18.3.1
       react-dom:
-        specifier: ^18.3.1
+        specifier: 'catalog:'
         version: 18.3.1(react@18.3.1)
     devDependencies:
       '@eslint/js':
-        specifier: ^9.8.0
+        specifier: 'catalog:'
         version: 9.9.0
       '@types/react':
-        specifier: ^18.3.3
+        specifier: 'catalog:'
         version: 18.3.3
       '@types/react-dom':
-        specifier: ^18.3.0
+        specifier: 'catalog:'
         version: 18.3.0
       '@vitejs/plugin-react-swc':
-        specifier: ^3.5.0
+        specifier: 'catalog:'
         version: 3.7.0(vite@5.4.0(@types/node@22.2.0))
       eslint:
-        specifier: ^9.8.0
+        specifier: 'catalog:'
         version: 9.9.0
       eslint-plugin-react-hooks:
-        specifier: ^5.1.0-rc.0
+        specifier: 'catalog:'
         version: 5.1.0-rc-fb9a90fa48-20240614(eslint@9.9.0)
       eslint-plugin-react-refresh:
-        specifier: ^0.4.9
+        specifier: 'catalog:'
         version: 0.4.9(eslint@9.9.0)
       globals:
-        specifier: ^15.9.0
+        specifier: 'catalog:'
         version: 15.9.0
       typescript:
-        specifier: ^5.5.3
+        specifier: 'catalog:'
         version: 5.5.4
       typescript-eslint:
-        specifier: ^8.0.0
+        specifier: 'catalog:'
         version: 8.0.1(eslint@9.9.0)(typescript@5.5.4)
       vite:
-        specifier: ^5.4.0
+        specifier: 'catalog:'
         version: 5.4.0(@types/node@22.2.0)
 
   packages/tools:
     dependencies:
       memfs:
-        specifier: ^4.11.1
+        specifier: 'catalog:'
         version: 4.11.1
     devDependencies:
       typescript:
-        specifier: ^5.5.3
+        specifier: 'catalog:'
         version: 5.5.4
       vitest:
-        specifier: ^2.0.5
+        specifier: 'catalog:'
         version: 2.0.5(@types/node@22.2.0)(jsdom@24.1.1)
 
   packages/ui:
     dependencies:
       '@types/node':
-        specifier: ^22.2.0
+        specifier: 'catalog:'
         version: 22.2.0
       react:
-        specifier: ^18.3.1
+        specifier: 'catalog:'
         version: 18.3.1
       react-dom:
-        specifier: ^18.3.1
+        specifier: 'catalog:'
         version: 18.3.1(react@18.3.1)
     devDependencies:
       '@eslint/js':
-        specifier: ^9.8.0
+        specifier: 'catalog:'
         version: 9.9.0
       '@testing-library/jest-dom':
-        specifier: ^6.4.8
+        specifier: 'catalog:'
         version: 6.4.8
       '@testing-library/react':
-        specifier: ^16.0.0
+        specifier: 'catalog:'
         version: 16.0.0(@testing-library/dom@10.4.0)(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/react':
-        specifier: ^18.3.3
+        specifier: 'catalog:'
         version: 18.3.3
       '@types/react-dom':
-        specifier: ^18.3.0
+        specifier: 'catalog:'
         version: 18.3.0
       '@vitejs/plugin-react-swc':
-        specifier: ^3.5.0
+        specifier: 'catalog:'
         version: 3.7.0(vite@5.4.0(@types/node@22.2.0))
       eslint:
-        specifier: ^9.8.0
+        specifier: 'catalog:'
         version: 9.9.0
       eslint-plugin-react-hooks:
-        specifier: ^5.1.0-rc.0
+        specifier: 'catalog:'
         version: 5.1.0-rc-fb9a90fa48-20240614(eslint@9.9.0)
       eslint-plugin-react-refresh:
-        specifier: ^0.4.9
+        specifier: 'catalog:'
         version: 0.4.9(eslint@9.9.0)
       globals:
-        specifier: ^15.9.0
+        specifier: 'catalog:'
         version: 15.9.0
       jsdom:
-        specifier: ^24.1.1
+        specifier: 'catalog:'
         version: 24.1.1
       typescript:
-        specifier: ^5.5.3
+        specifier: 'catalog:'
         version: 5.5.4
       typescript-eslint:
-        specifier: ^8.0.0
+        specifier: 'catalog:'
         version: 8.0.1(eslint@9.9.0)(typescript@5.5.4)
       vite:
-        specifier: ^5.4.0
+        specifier: 'catalog:'
         version: 5.4.0(@types/node@22.2.0)
       vitest:
-        specifier: ^2.0.5
+        specifier: 'catalog:'
         version: 2.0.5(@types/node@22.2.0)(jsdom@24.1.1)
 
   packages/utils:
     devDependencies:
       typescript:
-        specifier: ^5.5.3
+        specifier: 'catalog:'
         version: 5.5.4
       vitest:
-        specifier: ^2.0.5
+        specifier: 'catalog:'
         version: 2.0.5(@types/node@22.2.0)(jsdom@24.1.1)
 
 packages:
