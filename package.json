@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "pnpm -r build",
+    "build:web": "pnpm --filter web build",
+    "dev:web": "pnpm --filter web dev",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:all": "pnpm -r test"
   },
   "keywords": [],
   "author": "Bram Borggreve",
