@@ -1,9 +1,9 @@
-import {render, screen} from '@testing-library/react'
-import {expect, test} from 'vitest';
-import {UiButton} from './ui-button';
+import { render, screen } from '@testing-library/react'
+import { expect, test } from 'vitest'
+import { UiButton } from './ui-button'
 
 test('Button should be rendered', () => {
-    render(<UiButton>Hello</UiButton>);
+  render(<UiButton>Hello</UiButton>)
 
-    expect(screen.getByText(/Hello/)).toBeInTheDocument();
-});
+  expect(screen.getByText(/Hello/)).toBeInTheDocument()
+})

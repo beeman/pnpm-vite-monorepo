@@ -7,9 +7,22 @@
     "build": "pnpm -r build",
     "build:web": "pnpm --filter web build",
     "dev:web": "pnpm --filter web dev",
-    "test": "pnpm -r test"
+    "lint": "eslint . && prettier -c .",
+    "lint:fix": "eslint . --fix && prettier -w .",
+    "test": "pnpm -r test",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "Bram Borggreve",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": ">=7.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
 }
